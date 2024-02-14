@@ -1,0 +1,27 @@
+body {
+    min-height: 100vh;
+    background: #0b1522;
+}
+
+h1 {
+    color: #fe2fac;
+    margin: 0;
+    font-size: 3rem;
+    /* padding-bottom: 5px; */
+    font-family: "Protest Riot", sans-serif;
+}
+
+#name {
+    font-size: 5rem;
+}
+
+.proposalBox {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+

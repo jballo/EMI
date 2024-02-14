@@ -1,0 +1,58 @@
+body {
+    min-height: 100vh;
+    background:#0b1522;
+}
+
+
+.heartContainer {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+h1{
+    color:#fe2fac;
+    margin: 0;
+    font-size: 4rem;
+    /* padding-bottom: 5px; */
+    font-family: "Protest Riot", sans-serif;
+}
+p {
+    color: #fe2fac;
+    /* padding: 20px; */
+    margin-bottom: 65px;
+    font-family: "Protest Riot", sans-serif;
+}
+.heart {
+    height: 100px;
+    width: 100px;
+    background: #fe2fac;
+    /* position: relative; */
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #fe2fac;
+}
+.heart:before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #fe2fac;
+    top: -50%;
+    border-radius: 120px;
+    box-shadow: -10px 10px 90px #fe2fac;
+}
+
+.heart:after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: #fe2fac;
+    right: -50%;
+    border-radius: 120px;
+    box-shadow: -10px 10px 90px #fe2fac;
+}
