@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+    background: #0b1522;
+}
+
+h1{
+    color: #fe2fac;
+    font-size: 3rem;
+    font-family: "Protest Riot", sans-serif;
+}
+
+p {
+    color: #fe2fac;
+    margin-bottom: 65px;
+    font-family: "Protest Riot", sans-serif;
+
+}
+
+/* .message {
+    max-width: 700px;
+} */
+.message {
+    max-width: 700px;
+    width: 100%;
+    /* Ensure it takes up the available space */
+    text-align: center;
+    /* Center the text inside */
+    margin: 0 auto;
+    /* Center the div in the document */
+    display: flex;
+    /* Use flexbox */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: center;
+    /* Center children vertically if there's extra space */
+}
+
+.scroller {
+    max-width: 300px;
+    display: flex;
+    align-content: center;
+    /* border: 3px solid lime; */
+}
+
+.scroller__inner {
+    padding-block: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+        90deg, 
+        transparent, 
+        white 20%, 
+        white 80%, 
+        transparent);
+    mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(-50%);
+    }
+}

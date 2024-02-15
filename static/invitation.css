@@ -1,19 +1,6 @@
-body {
+/* body {
     min-height: 100vh;
     background: #0b1522;
-}
-
-h1 {
-    color: #fe2fac;
-    margin: 0;
-    font-size: 3rem;
-    /* padding-bottom: 5px; */
-    font-family: "Protest Riot", sans-serif;
-    width: 100%;
-}
-
-#name {
-    font-size: 5rem;
 }
 
 .proposalBox {
@@ -23,6 +10,95 @@ h1 {
     padding: 1.5rem;
     align-items: center;
     justify-items: center;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    min-height: 100vh;
+    background: #0b1522;
+    margin: 0;
+    /* Remove default margin */
 }
+
+.proposalBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* This centers the children (text, buttons) horizontally */
+    padding: 1.5rem;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin: 3rem;
+    font-family: 'Protest Riot', sans-serif;
+    /* Match the font style of your theme */
+    font-size: 1.2rem;
+    /* Adjust size as needed */
+    color: #fff;
+    /* White text color */
+    background: transparent;
+    /* Transparent background */
+    border: 2px solid #fe2fac;
+    /* Neon color border */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    border-radius: 5px;
+    /* Rounded corners */
+    outline: none;
+    /* Remove outline */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+    box-shadow: 0 0 8px #fe2fac,
+        /* Small glow */
+        0 0 10px #fe2fac,
+        /* Medium glow */
+        0 0 20px #fe2fac;
+    /* Large glow */
+}
+
+button:hover {
+    background-color: #fe2fac;
+    /* Neon color background on hover */
+    color: #0b1522;
+    /* Change text color on hover for contrast */
+    box-shadow: 0 0 15px #fe2fac,
+        /* Small glow */
+        0 0 20px #fe2fac,
+        /* Medium glow */
+        0 0 25px #fe2fac,
+        /* Large glow */
+        0 0 30px #fe2fac;
+    /* Extra large glow */
+}
+
+button:focus {
+    outline: none;
+    /* Remove outline on focus for a cleaner look */
+}
+
+
+h1 {
+    color: #fe2fac;
+    margin: 0;
+    font-size: 3rem;
+    /* padding-bottom: 5px; */
+    font-family: "Protest Riot", sans-serif;
+}
+
+#name {
+    font-size: 5rem;
+}
+
 
 
