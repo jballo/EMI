@@ -29,7 +29,7 @@ p {
     /* Ensure it takes up the available space */
     text-align: center;
     /* Center the text inside */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* Center the div in the document */
     display: flex;
     /* Use flexbox */
