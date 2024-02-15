@@ -45,6 +45,7 @@ p {
     max-width: 300px;
     display: flex;
     align-content: center;
+    margin-top: -2.5rem;
     /* border: 3px solid lime; */
 }
 
