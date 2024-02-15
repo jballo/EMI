@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure the body takes up at least the full viewport height */
+    background: #0b1522;
+}
+
+.message {
+    text-align: center;
+    /* Center the text for browsers that don't support flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* This will center the child elements horizontally */
+    width: 100%;
+    /* Adjust this as needed */
+    max-width: 600px;
+    /* Set a max-width for the .message if desired */
+}
+
+h1 {
+    color: #fe2fac;
+    font-size: 3rem;
+    font-family: "Protest Riot", sans-serif;
+    margin: 0.5rem 0;
+    /* Add some spacing around the h1 */
+}
+
+img {
+    /* width: 100%; Remove or comment this out if you don't want the image to stretch */
+    max-width: 200px;
+    /* This will ensure the image does not stretch beyond its original width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin: 0.5rem;
+    /* Maintain some margin around the image */
+}
+
+
+button {
+    margin-bottom: 0.25rem;
+    font-family: 'Protest Riot', sans-serif;
+    /* Match the font style of your theme */
+    font-size: 1.2rem;
+    /* Adjust size as needed */
+    color: #fff;
+    /* White text color */
+    background: transparent;
+    /* Transparent background */
+    border: 2px solid #fe2fac;
+    /* Neon color border */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    border-radius: 5px;
+    /* Rounded corners */
+    outline: none;
+    /* Remove outline */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Smooth transition for hover effect */
+    box-shadow: 0 0 8px #fe2fac,
+        /* Small glow */
+        0 0 10px #fe2fac,
+        /* Medium glow */
+        0 0 20px #fe2fac;
+    /* Large glow */
+}
+
+button:hover {
+    background-color: #fe2fac;
+    /* Neon color background on hover */
+    color: #0b1522;
+    /* Change text color on hover for contrast */
+    box-shadow: 0 0 15px #fe2fac,
+        /* Small glow */
+        0 0 20px #fe2fac,
+        /* Medium glow */
+        0 0 25px #fe2fac,
+        /* Large glow */
+        0 0 30px #fe2fac;
+    /* Extra large glow */
+}
